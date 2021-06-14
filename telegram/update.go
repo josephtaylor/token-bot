@@ -46,7 +46,11 @@ func ProcessUpdate(update *Update) error {
 		_, err := SendBalanceMessage(update)
 		return err
 	}
-	// send unknown command message.
+	if strings.Contains(update.Message.Text, "/about") {
+		_, err := SendAboutMessage(update)
+		return err
+	}
+	//TODO: send unknown command message.
 	return nil
 }
 
