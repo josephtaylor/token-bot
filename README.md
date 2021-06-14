@@ -58,3 +58,14 @@ To enable debug logging use `-d`:
 ## Building the Project
 
 run `make` in the root directory.
+
+# Donations
+
+If you use this bot for your project,
+consider making a donation!
+
+Send ETH or tokens to the following address:
+
+```
+0x5a61F59F41bE917129d12051F19d29B595452535
+```
