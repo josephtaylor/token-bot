@@ -1,0 +1,12 @@
+app:
+  etherscan:
+    baseUri: "https://api.etherscan.io/api"
+    apiKey: "your etherscan API key"
+  pairAddress: "0x3ec09da4189be8975c717f359679c47ea46de68a"
+  totalTokens: 1000000000000.00
+  website: "koshucoin.com"
+  twitter: "@KoshuTakeOver"
+  telegram:
+    baseUri: "telegram bot URI"
+  uniswap:
+    baseUri: "https://api.thegraph.com/subgraphs/name/uniswap/uniswap-v2"

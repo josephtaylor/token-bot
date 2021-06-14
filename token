@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+## Get the absolute working directory
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ] ; do SOURCE="$(readlink "$SOURCE")"; done
+BASE_DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+if [[ ! -d "${BASE_DIR}/.target/bin" ]]; then
+    echo "Binary missing. Run \`make\` and then try again"
+    exit 1
+fi
+
+.target/bin/token "$@"
