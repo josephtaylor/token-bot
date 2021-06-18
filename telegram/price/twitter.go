@@ -11,7 +11,8 @@ type TwitterItem struct {
 }
 
 func (t *TwitterItem) GetMessage(_ *uniswap.Token) string {
+	twitter := strings.ReplaceAll(config.App.Twitter, "_", "\\_")
 	return fmt.Sprintf("🐦 *Twitter:* [%s](%s)",
-		config.App.Twitter,
-		fmt.Sprintf("https://twitter.com/%s", strings.Replace(config.App.Twitter, "@", "", 1)))
+		twitter,
+		fmt.Sprintf("https://twitter.com/%s", strings.Replace(twitter, "@", "", 1)))
 }
